@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024腓利門書房書展總覽</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 220px);
+            justify-content: center;
+        }
+
+        li {
+            grid-column: span 2;
+            text-align: center;
+            border-radius: 65px;
+            color: #FEF6EA;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 1.5em;
+            font-family: sans-serif;
+            position: relative;
+            padding: 20px;
+            border: 20px solid #0000;
+            background: linear-gradient(var(--highlight-color, #615442) 0 0) content-box,
+                linear-gradient(var(--c, #E9D1A3) 0 0) padding-box,
+                linear-gradient(var(--d, 90deg), #0000 75%, #8A6739 0) border-box;
+            transition: background-color 0.3s ease;
+        }
+
+        li:nth-child(even) {
+            grid-column-end: -1;
+            --d: -90deg;
+            --c: #F8B72B;
+        }
+
+        li:not(:last-child) {
+            margin-bottom: -20px;
+        }
+
+        li:before,
+        li:after {
+            content: "";
+            display: block;
+            height: 0.6em;
+        }
+
+        time {
+            position: absolute;
+            font-size: 1em;
+            left: calc(100% + 50px);
+            top: 50%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+        }
+
+        li:nth-child(even) time {
+            left: auto;
+            color: #615442;
+            right: calc(100% + 50px);
+        }
+
+        time:before {
+            content: "";
+            position: absolute;
+            height: 10px;
+            top: calc(50% - 5px);
+            right: calc(100% + 5px);
+            width: 65px;
+            background: repeating-linear-gradient(-90deg, #F8B72B 0 5px, #0000 0 10px) 50%/100% 2px no-repeat;
+        }
+
+        li:nth-child(even) time:before {
+            right: auto;
+            left: calc(100% + 5px);
+            background: repeating-linear-gradient(90deg, #F8B72B 0 5px, #0000 0 10px) 50%/100% 2px no-repeat;
+        }
+
+        h1,
+        p {
+            display: none;
+        }
+
+        html {
+            background:
+                radial-gradient(farthest-side at top right, #8A6739 98%, #0000) calc(50% - 10px) 0/20px 20px no-repeat,
+                radial-gradient(farthest-side at bottom right, #8A6739 98%, #0000) calc(50% - 10px) 100%/20px 20px no-repeat,
+                linear-gradient(90deg, #E9D1A3 50%, #F8B72B 0);
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .highlight-closest {
+            --highlight-color: #FF0000; /* 最近的書展內部變為紅色 */
+        }
+
+        .highlight-upcoming {
+            --highlight-color: #FF6347; /* 近期兩個書展內部變為橘紅色 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>2024年腓利門書房書展總覽</h1>
+    <p>2024年腓利門書房書展時間軸。</p>
+    <ul class="timeline">
+        <li><time datetime="2024-06-30">2024年</time>腓利門書房下半年書展總覽</li>
+        <li><time datetime="2024-07-01">7/1</time>台中歌劇院書展</li>
+        <li><time datetime="2024-07-06">7/6-7</time>內新教會書展</li>
+        <li><time datetime="2024-07-06">7/6</time>嘉義文化廳書展</li>
+        <li><time datetime="2024-07-19">7/19-21</time>和順教會書展</li>
+        <li><time datetime="2024-08-02">8/2-8/4</time>桃園教會書展</li>
+        <li><time datetime="2024-08-10">8/10</time>伸港教會書展</li>
+        <li><time datetime="2024-08-16">8/16-17</time>太平教會書展</li>
+        <li><time datetime="2024-08-17">8/17</time>斗六教會書展</li>
+        <li><time datetime="2024-08-23">8/23-24</time>十全教會書展</li>
+        <li><time datetime="2024-08-23">8/23-24</time>松山教會書展</li>
+        <li><time datetime="2024-08-31">8/31</time>花壇教會書展</li>
+        <li><time datetime="2024-08-31">8/31</time>彰興教會書展</li>
+        <li><time datetime="2024-09-06">9/6-7</time>雪霧鬧教會書展</li>
+        <li><time datetime="2024-09-13">9/13-14</time>關西教會書展</li>
+        <li><time datetime="2024-09-20">9/20-21</time>五甲教會書展</li>
+        <li><time datetime="2024-09-27">9/27-28</time>花蓮教會書展</li>
+        <li><time datetime="2024-09-27">9/27-28</time>北興教會書展</li>
+        <li><time datetime="2024-10-12">10/12</time>黎明教會書展</li>
+        <li><time datetime="2024-10-18">10/18-19</time>莒光教會書展</li>
+        <li><time datetime="2024-10-18">10/18-19</time>新竹教會書展</li>
+        <li><time datetime="2024-10-25">10/25-26</time>嘉義教會書展</li>
+        <li><time datetime="2024-11-01">11/1-10</time>西馬總會書展</li>
+        <li><time datetime="2024-11-22">11/22-23</time>開元教會書展</li>
+        <li><time datetime="2024-12-07">12/7</time>沙鹿教會書展</li>
+    </ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const items = document.querySelectorAll("ul.timeline li");
+            const now = new Date();
+
+            let closestItem = null;
+            let secondClosestItem = null;
+            let minDiff = Infinity;
+            let secondMinDiff = Infinity;
+
+            items.forEach(item => {
+                const timeElement = item.querySelector("time");
+                const eventDate = new Date(timeElement.getAttribute("datetime"));
+
+                const diff = eventDate - now;
+
+                if (diff >= 0 && diff < minDiff) {
+                    secondMinDiff = minDiff;
+                    secondClosestItem = closestItem;
+                    minDiff = diff;
+                    closestItem = item;
+                } else if (diff >= 0 && diff < secondMinDiff) {
+                    secondMinDiff = diff;
+                    secondClosestItem = item;
+                }
+            });
+
+            if (closestItem) {
+                closestItem.classList.add("highlight-closest");
+                closestItem.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+
+            if (secondClosestItem) {
+                secondClosestItem.classList.add("highlight-upcoming");
+            }
+        });
+    </script>
+</body>
+
+</html>
